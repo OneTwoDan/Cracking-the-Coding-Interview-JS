@@ -1,10 +1,9 @@
 // Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
 
-const str1 = 'abcdef'
-const str2 = 'aabbcc'
-
 function hasUniqueCharacters(str) {
     const strMap = {}
+
+    str = str.toLowerCase();
 
     for (const char of str) {
         if (strMap[char]) {
@@ -16,11 +15,10 @@ function hasUniqueCharacters(str) {
     return true
 }
 
-console.log(hasUniqueCharacters(str1))
-console.log(hasUniqueCharacters(str2))
-
 // No Data structures
 function hasUniqueCharactersNoDS(str) {
+    str = str.toLowerCase();
+
     for (let i = 0; i < str.length; i++) {
         for (let j = i + 1; j < str.length; j++) {
             if (str[i] === str[j]) {
@@ -31,5 +29,4 @@ function hasUniqueCharactersNoDS(str) {
     return true;
 }
 
-console.log(hasUniqueCharactersNoDS(str1))
-console.log(hasUniqueCharactersNoDS(str2))
+module.exports = { hasUniqueCharacters, hasUniqueCharactersNoDS };

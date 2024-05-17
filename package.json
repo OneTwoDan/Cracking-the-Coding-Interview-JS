@@ -1,0 +1,23 @@
+{
+  "name": "cracking-the-coding-interview-js",
+  "version": "1.0.0",
+  "description": "Este repositorio contiene soluciones en JavaScript para los ejercicios del libro \"Cracking the Coding Interview\" de Gayle Laakmann McDowell.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OneTwoDan/Cracking-the-Coding-Interview-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OneTwoDan/Cracking-the-Coding-Interview-JS/issues"
+  },
+  "homepage": "https://github.com/OneTwoDan/Cracking-the-Coding-Interview-JS#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
