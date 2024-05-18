@@ -1,22 +1,28 @@
 # Cracking the Coding Interview - JavaScript
 
-Este repositorio contiene soluciones en JavaScript para los problemas presentados en el libro "Cracking the Coding Interview" de Gayle Laakmann McDowell. Cada problema está organizado por capítulo y ejercicio, con sus respectivas soluciones y pruebas unitarias.
+This repository contains solutions in JavaScript for the problems presented in the book "Cracking the Coding Interview" by Gayle Laakmann McDowell. Each problem is organized by chapter and exercise, with their respective solutions and unit tests.
 
-## Ejecución de Pruebas
+## Running Tests
 
-Para ejecutar las pruebas unitarias, asegúrate de tener Node.js y npm instalados en tu sistema. Luego, sigue estos pasos:
+To run the unit tests, make sure you have Node.js and npm installed on your system. Then, follow these steps:
 
-1. Abre una terminal en la raíz del repositorio.
-2. Ejecuta el siguiente comando para instalar las dependencias:
+1. Open a terminal in the root of the repository.
+2. Run the following command to install the dependencies:
 
 `npm install`
 
-3. Una vez completada la instalación, ejecuta el siguiente comando para ejecutar las pruebas con Jest:
+3. Once the installation is complete, run the following command to execute the tests with Jest:
 
 `npx jest`
 
-Esto ejecutará todas las pruebas unitarias en el repositorio y te proporcionará retroalimentación sobre si pasaron o fallaron.
+This will run all the unit tests in the repository and provide you feedback on whether they passed or failed.
+
+### Running Tests for a Specific Exercise
+
+`npx jest test_file_name.test.js`
+
+Replace test_file_name.test.js with the name of the specific test file for the exercise you want to test.
 
 ## Contribuciones
 
-¡Las contribuciones son bienvenidas! Si encuentras algún error en las soluciones existentes, tienes una mejor solución, o deseas agregar más problemas del libro, no dudes en abrir un issue o enviar un pull request.
+Contributions are welcome! If you find any errors in the existing solutions, have a better solution, or want to add more problems from the book, feel free to open an issue or send a pull request.
