@@ -17,6 +17,12 @@ To run the unit tests, make sure you have Node.js and npm installed on your syst
 
 This will run all the unit tests in the repository and provide you feedback on whether they passed or failed.
 
+### Running Tests for a Specific Exercise
+
+`npx jest test_file_name.test.js`
+
+Replace test_file_name.test.js with the name of the specific test file for the exercise you want to test.
+
 ## Contribuciones
 
 Contributions are welcome! If you find any errors in the existing solutions, have a better solution, or want to add more problems from the book, feel free to open an issue or send a pull request.
