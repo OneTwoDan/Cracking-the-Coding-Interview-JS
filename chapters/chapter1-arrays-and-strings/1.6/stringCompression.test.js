@@ -1,31 +1,17 @@
 const { compressString } = require('./stringCompression');
 
-test('compresses a string with repeated characters', () => {
-    expect(compressString('aabcccccaaa')).toBe('a2b1c5a3');
+test('compresses correctly when characters are repeated', () => {
+    expect(compressString("aabcccccaaa")).toBe("a2b1c5a3");
+    expect(compressString("aaaaaaa")).toBe("a7");
+    expect(compressString("abbcccddddeeeee")).toBe("a1b2c3d4e5");
+    expect(compressString("aaAA")).toBe("aaAA");
+    expect(compressString("aaAaA")).toBe("aaAaA");
+    expect(compressString("aabbbccccddeee")).toBe("a2b3c4d2e3");
 });
 
-test('returns the original string if compression is not smaller', () => {
-    expect(compressString('abc')).toBe('abc');
-    expect(compressString('aabbcc')).toBe('aabbcc');
-});
-
-test('handles empty strings', () => {
-    expect(compressString('')).toBe('');
-});
-
-test('handles strings with no repeated characters', () => {
-    expect(compressString('abcd')).toBe('abcd');
-});
-
-test('handles strings with single character', () => {
-    expect(compressString('a')).toBe('a');
-});
-
-test('handles strings with two characters', () => {
-    expect(compressString('aa')).toBe('a2');
-    expect(compressString('ab')).toBe('ab');
-});
-
-test('compresses a string with mixed case characters', () => {
-    expect(compressString('aAbBcCcC')).toBe('a1A1b1B1c1C2');
+test('does not compress when compressed string is longer or equal to original string', () => {
+    expect(compressString("abcde")).toBe("abcde");
+    expect(compressString("")).toBe("");
+    expect(compressString("aabbccddee")).toBe("aabbccddee");
+    expect(compressString("AABBCCDD")).toBe("AABBCCDD");
 });
