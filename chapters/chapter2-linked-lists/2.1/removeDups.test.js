@@ -1,8 +1,8 @@
-const { LinkedList } = require('./removeDups');
+const { removeDups } = require('./removeDups');
 
 describe('LinkedList', () => {
     it('should remove duplicates from unsorted linked list', () => {
-        const list = new LinkedList();
+        const list = new removeDups();
         list.append(3);
         list.append(1);
         list.append(2);
@@ -16,7 +16,7 @@ describe('LinkedList', () => {
     });
 
     it('should handle an empty list', () => {
-        const list = new LinkedList();
+        const list = new removeDups();
 
         list.removeDuplicates();
 
@@ -24,7 +24,7 @@ describe('LinkedList', () => {
     });
 
     it('should handle a list with no duplicates', () => {
-        const list = new LinkedList();
+        const list = new removeDups();
         list.append(1);
         list.append(2);
         list.append(3);
@@ -36,7 +36,7 @@ describe('LinkedList', () => {
     });
 
     it('should handle a list with all duplicates', () => {
-        const list = new LinkedList();
+        const list = new removeDups();
         list.append(1);
         list.append(1);
         list.append(1);
